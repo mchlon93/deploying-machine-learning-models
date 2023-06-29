@@ -254,12 +254,7 @@ workflows:
     jobs:
       - section_07_test_app
       # upload after git tags are created
-      - section_07_test_and_upload_regression_model:
-        filters:
-          branches:
-            only:
-              -master
-              -demo
+      - section_07_test_and_upload_regression_model
 
       - section_08_deploy_app_container_via_railway:
          filters:
